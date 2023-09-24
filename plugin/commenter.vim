@@ -1,0 +1,1 @@
+nnoremap gc :call g:commenter#ToggleComment(v:count1)<cr>
