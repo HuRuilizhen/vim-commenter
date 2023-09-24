@@ -1,4 +1,4 @@
-﻿# vim_commenter
+﻿# vim-commenter
 
 - written by zhenji
 
