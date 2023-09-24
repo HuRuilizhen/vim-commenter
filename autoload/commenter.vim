@@ -24,9 +24,9 @@ endfunction
 function! g:commenter#InsertOrRemoveComment(lnum, line,  indent, is_insert)
     let l:prefix = a:indent > 0 ? a:line[: a:indent - 1] : ''
     if a:is_insert
-        call setline(a:lnum, l:prefix . g:commeter#comment_string . a:line[a:indent : ])
+        call setline(a:lnum, l:prefix . g:commenter#comment_string . a:line[a:indent : ])
     else
-        call setline(a:lnum, l:prefix . a:line[a:indent+len(g:commeter#comment_string) : ])
+        call setline(a:lnum, l:prefix . a:line[a:indent+len(g:commenter#comment_string) : ])
     endif
 endfunction
 
